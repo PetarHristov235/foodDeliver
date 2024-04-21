@@ -1,0 +1,78 @@
+<!-- index.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+</head>
+<body>
+<link rel="stylesheet" href="loginPage.css">
+<div class="bg">
+    <div class="content">
+        <h1 class="header-title">FoodSwift</h1>
+        <h1 class="header-title">FoodSwift</h1>
+    </div>
+</div>
+<h2>Log In</h2>
+<form id="loginForm">
+    <br>
+    <div class="username">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+    </div>
+    <br>
+    <div class="password">
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+    </div>
+    <br>
+    <button type="button" class="btn" onclick="loginUser()">Login</button>
+</form>
+
+<script>
+
+    function loginUser() {
+        const username = document.getElementById('username').value;
+        const password = document.getElementById('password').value;
+
+        const authenticationRequest = {
+            username: username,
+            password: password
+        };
+
+        fetch('http://localhost:8080/auth/authenticate', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(authenticationRequest)
+        })
+            .then(response => {
+                if (response.ok) {
+                    return response.text();
+                } else {
+                    throw new Error('Login failed');
+                }
+            })
+            .then(jwt => {
+                console.log('Login successful! JWT:', jwt);
+                alert('Login successful!');
+
+                sessionStorage.setItem('jwt', jwt);
+
+                setTimeout(function () {
+                    window.location.assign("../Cities%20Restaurants%20Page/" + sessionStorage.getItem('city') + "/mainPage.html");
+                }, 500);
+            })
+            .catch(error => {
+                console.error('There was a problem with the fetch operation:', error);
+                alert('Login failed!');
+            });
+    }
+</script>
+
+<div class="bg2"></div>
+</body>
+</html>

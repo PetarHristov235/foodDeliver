@@ -1,0 +1,630 @@
+@import url('https://fonts.googleapis.com/css2?family=Madimi+One&family=Oswald:wght@700&display=swap');
+body {
+    background-color: #0c0032;
+    font-family: "Madimi One", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    color: white;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+    overflow-y: visible;
+}
+
+.mc-img {
+    width: 1600px;
+    height: 250px;
+    filter: brightness(0.35)
+}
+
+.text-inside-banner {
+    position: relative;
+    font-size: 2rem;
+    bottom: 150px;
+    left: 120px;
+}
+
+.under-text {
+    position: relative;
+    font-size: 1.2rem;
+    bottom: 140px;
+    left: 195px;
+}
+
+.under-text2 {
+    position: relative;
+    font-size: 1.2rem;
+    bottom: 115px;
+    left: 1230px;
+}
+
+.white-banner-description {
+    background: white;
+    height: 40px;
+    position: relative;
+    bottom: 100px;
+    font-size: 1.7rem;
+}
+
+p {
+    position: absolute;
+    color: black;
+    bottom: -25px;
+}
+
+.rating-img {
+    width: 33px;
+    height: 33px;
+    position: relative;
+    bottom: 07px;
+    left: 54px
+}
+
+.rating {
+    left: 100px;
+    top: -24px;
+}
+
+.delivery-img {
+    width: 43px;
+    height: 43px;
+    position: relative;
+    bottom: 01px;
+    left: 205px
+}
+
+.delivery {
+    left: 300px;
+    top: -24px;
+}
+
+.location-img {
+    width: 32px;
+    height: 32px;
+    position: relative;
+    bottom: 06px;
+    left: 330px
+}
+
+.location {
+    left: 460px;
+    top: -24px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    left: 100px;
+}
+
+.basket-img {
+    position: relative;
+    left: 950px;
+    bottom: 50px;
+    width: 36px;
+    height: 36px;
+    cursor: pointer;
+
+}
+
+.type-restaurant {
+    position: relative;
+    left: 1200px;
+    bottom: 123px;
+}
+
+.title1 {
+    position: relative;
+    left: 130px;
+    bottom: 75px;
+    font-size: 2.5rem;
+}
+
+.box1 {
+    background: white;
+    height: 150px;
+    width: 440px;
+    position: relative;
+    left: 55px;
+    bottom: 40px;
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: 0 0 5px #3500d3,
+    0 0 25px #3500d3;
+}
+
+.box2 {
+    background: white;
+    height: 150px;
+    width: 440px;
+    position: relative;
+    left: 550px;
+    bottom: 190px;
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: 0 0 5px #3500d3,
+    0 0 25px #3500d3;
+}
+
+.box3 {
+    background: white;
+    height: 150px;
+    width: 440px;
+    position: relative;
+    left: 1040px;
+    bottom: 340px;
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: 0 0 5px #3500d3,
+    0 0 25px #3500d3;
+}
+
+.box-title {
+    color: black;
+    font-size: 1.5rem;
+    position: relative;
+    bottom: 10px;
+    left: 10px;
+}
+
+.box-description {
+    color: black;
+    width: 180px;
+    bottom: 10px;
+    left: 10px;
+    position: relative;
+    height: 20.8px;
+}
+
+.separate-line1 {
+    transform: rotate(90deg);
+    height: 1px;
+    width: 75px;
+    background: #0c0032;
+    box-shadow: 0 0 5px #3500d3,
+    0 0 25px #3500d3;
+    position: relative;
+    bottom: 10px;
+    right: 15px;
+}
+
+.separate-line2 {
+    transform: rotate(90deg);
+    height: 1px;
+    width: 75px;
+    background: #0c0032;
+    box-shadow: 0 0 5px #3500d3,
+    0 0 25px #3500d3;
+    position: relative;
+    bottom: 60px;
+    right: 15px;
+}
+
+.separate-line3 {
+    transform: rotate(90deg);
+    height: 1px;
+    width: 75px;
+    background: #0c0032;
+    box-shadow: 0 0 5px #3500d3,
+    0 0 25px #3500d3;
+    position: relative;
+    bottom: 60px;
+    right: 15px;
+}
+
+.box-price {
+    color: black;
+    position: relative;
+    bottom: 30px;
+    left: 220px;
+}
+
+.row2 {
+    position: relative;
+    bottom: 240px;
+}
+
+.row3 {
+    position: relative;
+    bottom: 470px;
+}
+
+.box1:hover {
+    transform: scale(1.15);
+    background: #06a8ff;
+    box-shadow: 2px 2px 2px #000;
+}
+
+.box2:hover {
+    transform: scale(1.15);
+    background: #06a8ff;
+    box-shadow: 2px 2px 2px #000;
+}
+
+.box3:hover {
+    transform: scale(1.15);
+    background: #06a8ff;
+    box-shadow: 2px 2px 2px #000;
+}
+
+.line1 {
+    height: 5px;
+    background: white;
+    box-shadow: 0 0 5px #3500d3,
+    0 0 25px #3500d3;
+    position: relative;
+    bottom: 730px;
+}
+
+.title2 {
+    position: relative;
+    left: 130px;
+    bottom: 700px;
+    font-size: 2.5rem;
+}
+
+.row4 {
+    position: relative;
+    bottom: 650px;
+}
+
+.row5 {
+    position: relative;
+    bottom: 880px;
+}
+
+.row6 {
+    position: relative;
+    bottom: 1110px;
+}
+
+.title3 {
+    position: relative;
+    left: 130px;
+    bottom: 1320px;
+    font-size: 2.5rem;
+}
+
+.row7 {
+    position: relative;
+    bottom: 1250px;
+}
+
+.line2 {
+    height: 5px;
+    background: white;
+    box-shadow: 0 0 5px #3500d3,
+    0 0 25px #3500d3;
+    position: relative;
+    bottom: 1360px;
+}
+
+.line3 {
+    height: 5px;
+    background: white;
+    box-shadow: 0 0 5px #3500d3,
+    0 0 25px #3500d3;
+    position: relative;
+    bottom: 1485px;
+}
+
+.title4 {
+    position: relative;
+    left: 130px;
+    bottom: 1440px;
+    font-size: 2.5rem;
+}
+
+.row8 {
+    position: relative;
+    bottom: 1360px;
+}
+
+.row9 {
+    position: relative;
+    bottom: 1590px;
+}
+
+.line4 {
+    height: 5px;
+    background: white;
+    box-shadow: 0 0 5px #3500d3,
+    0 0 25px #3500d3;
+    position: relative;
+    bottom: 1830px;
+}
+
+.title5 {
+    position: relative;
+    left: 130px;
+    bottom: 1775px;
+    font-size: 2.5rem;
+}
+
+.row10 {
+    position: relative;
+    bottom: 1700px;
+}
+
+.row11 {
+    position: relative;
+    bottom: 1930px;
+}
+
+.row12 {
+    position: relative;
+    bottom: 2160px;
+}
+
+.row13 {
+    position: relative;
+    bottom: 2390px;
+}
+
+.line5 {
+    height: 5px;
+    background: white;
+    box-shadow: 0 0 5px #3500d3,
+    0 0 25px #3500d3;
+    position: relative;
+    bottom: 2640px;
+}
+
+.title6 {
+    position: relative;
+    left: 130px;
+    bottom: 2585px;
+    font-size: 2.5rem;
+}
+
+.row14 {
+    position: relative;
+    bottom: 2510px;
+}
+
+.line6 {
+    height: 5px;
+    background: white;
+    box-shadow: 0 0 5px #3500d3,
+    0 0 25px #3500d3;
+    position: relative;
+    bottom: 2750px;
+}
+
+.title7 {
+    position: relative;
+    left: 130px;
+    bottom: 2685px;
+    font-size: 2.5rem;
+}
+
+.row15 {
+    position: relative;
+    bottom: 2600px;
+}
+
+.row16 {
+    position: relative;
+    bottom: 2830px;
+}
+
+.line7 {
+    height: 5px;
+    background: white;
+    box-shadow: 0 0 5px #3500d3,
+    0 0 25px #3500d3;
+    position: relative;
+    bottom: 3065px;
+}
+
+.bottom-one {
+    position: relative;
+    bottom: 2950px;
+}
+
+.bottom-title1 {
+    position: relative;
+    left: 20%;
+}
+
+.bottom-description1 {
+    position: relative;
+    left: 248px;
+    width: 300px;
+}
+
+.bottom-button1 {
+    position: relative;
+    left: 314px;
+    top: 8px;
+    border-radius: 5px 10px;
+    background: #0c0032;
+    width: 100px;
+    height: 35px;
+    border-color: #06a8ff;
+    box-shadow: 0 0 5px #3500d3, 0 0 25px #3500d3;
+    color: white;
+    cursor: pointer;
+}
+
+.bottom-button1 a {
+    color: white;
+}
+
+.bottom-two {
+    position: relative;
+    bottom: 3125px;
+    left: 100px;
+}
+
+.bottom-title2 {
+    position: relative;
+    left: 60%;
+}
+
+.bottom-description2 {
+    position: relative;
+    left: 965px;
+    top: 10px;
+}
+
+.bottom-button2 {
+    position: relative;
+    left: 990px;
+    top: 20px;
+    border-radius: 5px 10px;
+    background: #0c0032;
+    width: 100px;
+    height: 35px;
+    border-color: #06a8ff;
+    box-shadow: 0 0 5px #3500d3, 0 0 25px #3500d3;
+    color: white;
+    cursor: pointer;
+}
+
+.bottom-button2 a {
+    color: white;
+}
+
+.line8 {
+    height: 5px;
+    width: 300px;
+    background: white;
+    box-shadow: 0 0 5px #3500d3,
+    0 0 25px #3500d3;
+    position: relative;
+    bottom: 3184px;
+    transform: rotate(90deg);
+}
+
+.line9 {
+    height: 5px;
+    background: white;
+    box-shadow: 0 0 5px #3500d3,
+    0 0 25px #3500d3;
+    position: relative;
+    bottom: 2980px;
+}
+
+.box-image {
+    width: 170px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+    position: relative;
+    left: 270px;
+    bottom: 133px;
+    border-bottom-left-radius: 0px;
+    border-top-left-radius: 0px;
+}
+
+.add-to-cart {
+    background-size: 100px;
+    width: 33px;
+    height: 33px;
+    position: relative;
+    bottom: 250px;
+    left: 234px;
+    background-color: #0c0032;
+    border-radius: 8px;
+    border-bottom-left-radius: 0px;
+    border-top-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+.cart-title {
+    font-size: 1.8rem;
+    position: relative;
+    bottom: 15px;
+}
+
+.cart-icon span {
+    color: black;
+    position: relative;
+    bottom: 71px;
+    left: 939.5px;
+    font-size: 1.35rem;
+}
+
+.close-img {
+    width: 30px;
+    height: 30px;
+}
+
+.sidebar {
+    width: 310px;
+    height: 95%;
+    position: fixed;
+    top: 0;
+    right: -350px;
+    background-color: white;
+    color: black;
+    box-shadow: -4px 0 6px rgba(0, 0, 0, 0.1);
+    transition: right 0.3s ease-in-out;
+    z-index: 1000;
+    padding: 20px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    max-height: 95vh;
+}
+
+.sidebar.open {
+    right: 0;
+}
+
+.sidebar-close {
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    cursor: pointer;
+}
+
+.cart-tems {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: -1rem;
+}
+
+.cart-item {
+    color: black;
+}
+
+.individual-cart-item {
+    display: flex;
+    color: black;
+    justify-content: space-between;
+    padding: 10px 5px;
+    border-radius: 5px;
+    border: 1px solid #0c0032;
+}
+
+.sidebar--footer {
+    position: absolute;
+    bottom: 25px;
+    width: 88%;
+}
+
+.total--amount {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 2px solid #0c0032;
+    border-radius: 5px;
+    padding: 0px 10px;
+    font-size: 20px;
+
+}
+
+.cart-total {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.checkout-btn {
+    width: 100%;
+    margin-top: 2rem;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 10px;
+}

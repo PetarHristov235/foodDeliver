@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap');
+body {
+    background-color: #0c0032;
+    overflow: hidden;
+    font-family: 'Oswald', sans-serif;
+}
+
+.container {
+    padding-left: 4%;
+    padding-right: 10%;
+    box-sizing: border-box;
+}
+
+.logo {
+    width: 100px;
+    position: relative;
+    bottom: 6px;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+}
+
+nav {
+    flex: 1;
+    text-align: right;
+    text-decoration: none;
+}
+
+.page-title {
+    color: whitesmoke;
+}
+
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    margin-left: 60px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-size: 20px;
+    color: whitesmoke;
+}
+
+.left-text {
+    display: flex;
+    padding-top: 25%;
+    padding-left: 5px;
+    align-items: center;
+}
+
+.text-in {
+    flex-basis: 35%;
+}
+
+.left-text-title {
+    color: whitesmoke;
+}
+
+.left-text-p {
+    color: whitesmoke;
+}
+
+.left-btn {
+
+    margin-top: 5%;
+    border-radius: 10px;
+    border-color: #190061;
+    background-color: #190061;
+    color:whitesmoke;
+    animation: fadeIn 5s;
+    box-shadow: 0 0 5px #3500d3,
+    0 0 25px #3500d3;
+    cursor: pointer;
+    width: 170px;
+    height: 50px;
+    border-radius: 100px;
+}
+
+
+.card {
+    width: 300px;
+    height: 200px;
+    display:inline-block  ;
+    border-radius: 10px;
+    background-color: whitesmoke;
+    background-position: -120px;
+    padding: 15px 25px;
+    box-shadow: 0 0 5px #3500d3,
+    0 0 25px #3500d3;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 10px 15px;
+    transition: transform 0.5s;
+}
+
+.first-2 {
+    position: relative;
+    left: 900px;
+    bottom: 460px;
+}
+
+.second-2 {
+    position: absolute;
+    bottom: 180px;
+    left: 985px;
+}
+
+.first-2 .card:hover {
+    transform: translateY(-15px);
+}
+
+.second-2 .card:hover {
+    transform: translateY(15px);
+}
+
+

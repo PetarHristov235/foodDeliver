@@ -1,0 +1,144 @@
+<!-- index.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <title>Registration Page</title>
+</head>
+<body>
+<link rel="stylesheet" href="registerPage.css">
+<div class="bg">
+    <div class="content">
+        <h1 class="header-title">FoodSwift</h1>
+        <h1 class="header-title">FoodSwift</h1>
+    </div>
+</div>
+<h2>Registration Form</h2>
+<form id="registrationForm">
+    <br>
+    <div class="name">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+    </div>
+    <br>
+    <div class="email">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+    </div>
+    <br>
+    <div class="username">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+    </div>
+    <br>
+    <div class="password">
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+    </div>
+    <div id="passwordStrengthMeter"></div>
+    <br>
+    <div class="confirmPassword">
+        <label for="confirmPassword">Confirm Password:</label>
+        <input type="password" id="confirmPassword" name="confirmPassword" required>
+    </div>
+    <div class="login">
+        <h4>Already have an account?<a class="redirect-login" href="../CitiesLoginPage/loginPage.html">Log in</a></h4>
+    </div>
+    <br>
+    <button type="button" class="btn" onclick="registerUser()">Register</button>
+</form>
+
+<div class="bg2"></div>
+
+<script>
+    function registerUser() {
+        // Get form data
+        const username = document.getElementById('username').value;
+        const email = document.getElementById('email').value;
+        const password = document.getElementById('password').value;
+        const confirmPassword = document.getElementById('confirmPassword').value;
+        const name = document.getElementById('name').value;
+
+        // Create user object
+        const user = {
+            username: username,
+            email: email,
+            password: password,
+            name: name
+        };
+
+        if (password !== confirmPassword) {
+            alert('Passwords do not match!');
+            return;
+        }
+
+document.getElementById('password').addEventListener('input', function(e) {
+    const password = e.target.value;
+    const passwordStrengthMeter = document.getElementById('passwordStrengthMeter');
+    const strength = getPasswordStrength(password);
+    passwordStrengthMeter.style.width = strength + '%';
+    passwordStrengthMeter.style.backgroundColor = getStrengthColor(strength);
+});
+
+function getPasswordStrength(password) {
+    if (password.length === 0) {
+        return 0;
+    }
+    let strength = 0;
+    if (password.length >= 8) {
+        strength += 25;
+    }
+    if (/[A-Z]/.test(password)) {
+        strength += 25;
+    }
+    if (/[a-z]/.test(password)) {
+        strength += 25;
+    }
+    if (/[0-9]/.test(password)) {
+        strength += 25;
+    }
+    return strength;
+}
+
+function getStrengthColor(strength) {
+    if (strength <= 25) {
+        return 'red';
+    } else if (strength <= 50) {
+        return 'orange';
+    } else if (strength <= 75) {
+        return 'yellow';
+    } else {
+        return 'green';
+    }
+}
+
+        // Make a POST request to the registration endpoint
+        fetch('http://localhost:8080/auth/register', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(user)
+        })
+            .then(response => {
+                if (response.ok) {
+                    console.log('Registration successful!');
+                    alert('Registration successful!');
+                } else {
+                    console.error('Registration failed:', response.status, response.statusText);
+                    alert('Registration failed!');
+                }
+            })
+            .catch(error => {
+                // Handle other types of errors (e.g., network issues)
+                console.error('There was a problem with the fetch operation:', error);
+                alert('Registration failed!');
+            });
+    }
+</script>
+
+</body>
+</html>

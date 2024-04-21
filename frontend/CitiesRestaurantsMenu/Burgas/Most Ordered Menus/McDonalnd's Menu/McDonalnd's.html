@@ -1,0 +1,661 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>McDonald's</title>
+</head>
+<body>
+<link rel="stylesheet" href="McDonalnd's.css">
+<script src="main.js"></script>
+
+<div class="banner">
+    <img class="mc-img" src="./img/crown_point_mcdonalds-RR-EDIT_001_hero-desktop.jfif">
+    <div class="text-inside-banner">McDonalnd's Burgas</div>
+    <div class="under-text">I'm Lovin' it!</div>
+    <div class="under-text2">Opened from 7AM to 11PM</div>
+    <div class="white-banner">
+        <div class="white-banner-description">
+            <img class="rating-img" src="./img/favourites.png">
+            <p class="rating">4.5/5</p>
+            <img class="delivery-img" src="./img/fast-delivery%20(1).png">
+            <p class="delivery">3.50 lv</p>
+            <img class="location-img" src="./img/placeholder.png">
+            <p class="location"><a href="https://maps.google.com/maps?hl=en&gl=bg&um=1&ie=UTF-8&fb=1&sa=X&ftid=0x40a694bfe9691687:0x7beb53440a2db775">See Location</a></p>
+            <div class="cart-icon">
+                <img class="basket-img" src="img/cart%20(1).png">
+                <span>0</span>
+            </div>
+            <p class="type-restaurant">Fast Food / Top Choosed</p>
+        </div>
+    </div>
+</div>
+
+<h1 class="title1">Beef</h1>
+<div class="menuContainer"></div>
+<!--<div class="row1">-->
+<!--    <div class="box1">-->
+<!--        <br>-->
+<!--        <div class="box-title">Cheeseburger</div>-->
+<!--        <br>-->
+<!--        <div class="box-description">With beef burger, cheese, onion, pickles, ketchup & mustard</div>-->
+<!--        <hr class="separate-line1">-->
+<!--        <div class="box-price">5</div>-->
+<!--        <img class="box-image" src="./img/3552f9aa-f01c-11ed-b923-72378383b646_dh_1060.jpg">-->
+<!--        <img class="add-to-cart" src="./img/plus%20(1).png">-->
+<!--    </div>-->
+
+<!--    <div class="box2">-->
+<!--        <br>-->
+<!--        <div class="box-title">Double Cheeseburger</div>-->
+<!--        <br>-->
+<!--        <div class="box-description">Two beef burger, two slices of melted cheese, onion, pickles, ketchup, mustard</div>-->
+<!--        <hr class="separate-line1">-->
+<!--        <div class="box-price">5.49lv</div>-->
+<!--        <img class="box-image" src="./img/354f607e-f01c-11ed-b923-72378383b646_dh_1050.jpg">-->
+<!--        <img class="add-to-cart" src="./img/plus%20(1).png">-->
+<!--    </div>-->
+
+<!--    <div class="box3">-->
+<!--        <br>-->
+<!--        <div class="box-title">Triple Cheeseburger</div>-->
+<!--        <br>-->
+<!--        <div class="box-description">Three beef burger, two slices of melted cheese, onion, pickles, ketchup, mustard</div>-->
+<!--        <hr class="separate-line1">-->
+<!--        <div class="box-price">5.49lv</div>-->
+<!--        <img class="box-image" src="./img/354bd9f4-f01c-11ed-b923-72378383b646_dh_1054.jpg">-->
+<!--        <img class="add-to-cart" src="./img/plus%20(1).png">-->
+<!--    </div>-->
+<!--</div>-->
+
+<!--<div class="row2">-->
+<!--    <div class="box1">-->
+<!--        <br>-->
+<!--        <div class="box-title">Big Mac ™</div>-->
+<!--        <br>-->
+<!--        <div class="box-description">With 2 beef burgers, cheese, onion, pickles, iceberg lettuce & special big mac sauce</div>-->
+<!--        <hr class="separate-line1">-->
+<!--        <div class="box-price">5.49lv</div>-->
+<!--        <img class="box-image" src="./img/353d3ee4-f01c-11ed-b923-72378383b646_dh_1010.jpg">-->
+<!--        <img class="add-to-cart" src="./img/plus%20(1).png">-->
+<!--    </div>-->
+
+<!--    <div class="box2">-->
+<!--        <br>-->
+<!--        <div class="box-title">Hamburger</div>-->
+<!--        <br>-->
+<!--        <div class="box-description">With beef burger, onion, pickles, ketchup & mustard</div>-->
+<!--        <hr class="separate-line1">-->
+<!--        <div class="box-price">5.49lv</div>-->
+<!--        <img class="box-image" src="./img/35544d46-f01c-11ed-b923-72378383b646_dh_1070.jpg">-->
+<!--        <img class="add-to-cart" src="./img/plus%20(1).png">-->
+<!--    </div>-->
+
+<!--    <div class="box3">-->
+<!--        <br>-->
+<!--        <div class="box-title">Single Big Tasty ™</div>-->
+<!--        <br>-->
+<!--        <div class="box-description">With beef burger, 2 slices of cheese,tomatoes, chives, iceberg lettuce & Big Tasty sauce</div>-->
+<!--        <hr class="separate-line1">-->
+<!--        <div class="box-price">5.49lv</div>-->
+<!--        <img class="box-image" src="./img/35359b58-f01c-11ed-b923-72378383b646_dh_1088.jpg">-->
+<!--        <img class="add-to-cart" src="./img/plus%20(1).png">-->
+<!--    </div>-->
+<!--</div>-->
+
+<!--<div class="row3">-->
+<!--    <div class="box1">-->
+<!--        <br>-->
+<!--        <div class="box-title">Deluxe Burger</div>-->
+<!--        <br>-->
+<!--        <div class="box-description">With beef burger, cheese, iceberg lettuce,tomato,onion & mayonnaise sauce</div>-->
+<!--        <hr class="separate-line1">-->
+<!--        <div class="box-price">5.49lv</div>-->
+<!--        <img class="box-image" src="./img/3544940a-f01c-11ed-b923-72378383b646_dh_1020.jpg">-->
+<!--        <img class="add-to-cart" src="./img/plus%20(1).png">-->
+<!--    </div>-->
+
+<!--    <div class="box2">-->
+<!--        <br>-->
+<!--        <div class="box-title">Crispy McBacon Beef™</div>-->
+<!--        <br>-->
+<!--        <div class="box-description">With 2 beef burgers, bacon, cheese, onion & sauce</div>-->
+<!--        <hr class="separate-line1">-->
+<!--        <div class="box-price">5.49lv</div>-->
+<!--        <img class="box-image" src="./img/1438a70e-cf7f-11ee-8872-aa367dffce9f_dh_1104.jpg">-->
+<!--        <img class="add-to-cart" src="./img/plus%20(1).png">-->
+<!--    </div>-->
+
+<!--    <div class="box3">-->
+<!--        <br>-->
+<!--        <div class="box-title">Double Big Tasty ™</div>-->
+<!--        <br>-->
+<!--        <div class="box-description">With 2 beef burgers, 3 slices of cheese, tomato, onion, iceberg lettuce & Big Tasty sauce</div>-->
+<!--        <hr class="separate-line1">-->
+<!--        <div class="box-price">5.49lv</div>-->
+<!--        <img class="box-image" src="./img/3531d4d2-f01c-11ed-b923-72378383b646_dh_1099.jpg">-->
+<!--        <img class="add-to-cart" src="./img/plus%20(1).png">-->
+<!--    </div>-->
+<!--</div>-->
+
+<!--<hr class="line1">-->
+
+<!--<h1 class="title2">Chiken</h1>-->
+
+<!--<div class="row4">-->
+<!--    <div class="box1">-->
+<!--        <br>-->
+<!--        <div class="box-title">Chiken Burger</div>-->
+<!--        <br>-->
+<!--        <div class="box-description">With breaded chicken, iceberg lettuce & honey mustard sauce</div>-->
+<!--        <hr class="separate-line1">-->
+<!--        <div class="box-price">5.49lv</div>-->
+<!--        <img class="box-image" src="./img/6dbe85fa-7e03-11ee-ac8b-f2d3c2fe88d0_dh_5220.jpg">-->
+<!--        <img class="add-to-cart" src="./img/plus%20(1).png">-->
+<!--    </div>-->
+
+<!--    <div class="box2">-->
+<!--        <br>-->
+<!--        <div class="box-title">Single Big Tasty</div>-->
+<!--        <br>-->
+<!--        <div class="box-description">Crispy chicken breast, Big Tasty sauce, chives, iceberg lettuce, tomatoes & 2 slices of cheese</div>-->
+<!--        <hr class="separate-line1">-->
+<!--        <div class="box-price">5.49lv</div>-->
+<!--        <img class="box-image" src="./img/6dbe85fa-7e03-11ee-ac8b-f2d3c2fe88d0_dh_5220.jpg">-->
+<!--        <img class="add-to-cart" src="./img/plus%20(1).png">-->
+<!--    </div>-->
+
+<!--    <div class="box3">-->
+<!--        <br>-->
+<!--        <div class="box-title">McCrispy™</div>-->
+<!--        <br>-->
+<!--        <div class="box-description">Crispy chicken breast, melted cheese, pickles and ranch dressing</div>-->
+<!--        <hr class="separate-line1">-->
+<!--        <div class="box-price">5.49lv</div>-->
+<!--        <img class="box-image" src="./img/6dbe85fa-7e03-11ee-ac8b-f2d3c2fe88d0_dh_5220.jpg">-->
+<!--        <img class="add-to-cart" src="./img/plus%20(1).png">-->
+<!--    </div>-->
+<!--</div>-->
+
+<!--<div class="row5">-->
+<!--    <div class="box1">-->
+<!--        <br>-->
+<!--        <div class="box-title">McChicken ™</div>-->
+<!--        <br>-->
+<!--        <div class="box-description">Crispy chicken breast, iceberg lettuce & mayonnaise sauce</div>-->
+<!--        <hr class="separate-line1">-->
+<!--        <div class="box-price">5.49lv</div>-->
+<!--        <img class="box-image" src="./img/6dbe85fa-7e03-11ee-ac8b-f2d3c2fe88d0_dh_5220.jpg">-->
+<!--        <img class="add-to-cart" src="./img/plus%20(1).png">-->
+<!--    </div>-->
+
+<!--    <div class="box2">-->
+<!--        <br>-->
+<!--        <div class="box-title">Crispy McBacon™</div>-->
+<!--        <br>-->
+<!--        <div class="box-description">With crispy chicken breast, cheese, bacon, chives & sauce</div>-->
+<!--        <hr class="separate-line1">-->
+<!--        <div class="box-price">5.49lv</div>-->
+<!--        <img class="box-image" src="./img/6dbe85fa-7e03-11ee-ac8b-f2d3c2fe88d0_dh_5220.jpg">-->
+<!--        <img class="add-to-cart" src="./img/plus%20(1).png">-->
+<!--    </div>-->
+
+<!--    <div class="box3">-->
+<!--        <br>-->
+<!--        <div class="box-title">6 Chicken McNuggets</div>-->
+<!--        <br>-->
+<!--        <div class="box-description">Breaded chicken breast bites served with sauce</div>-->
+<!--        <hr class="separate-line1">-->
+<!--        <div class="box-price">5.49lv</div>-->
+<!--        <img class="box-image" src="./img/6dbe85fa-7e03-11ee-ac8b-f2d3c2fe88d0_dh_5220.jpg">-->
+<!--        <img class="add-to-cart" src="./img/plus%20(1).png">-->
+<!--    </div>-->
+<!--</div>-->
+
+<!--<div class="row6">-->
+<!--    <div class="box1">-->
+<!--        <br>-->
+<!--        <div class="box-title">9 Chicken McNuggets</div>-->
+<!--        <br>-->
+<!--        <div class="box-description">Breaded chicken breast bites served with sauce</div>-->
+<!--        <hr class="separate-line1">-->
+<!--        <div class="box-price">5.49lv</div>-->
+<!--        <img class="box-image" src="./img/6dbe85fa-7e03-11ee-ac8b-f2d3c2fe88d0_dh_5220.jpg">-->
+<!--        <img class="add-to-cart" src="./img/plus%20(1).png">-->
+<!--    </div>-->
+
+<!--    <div class="box2">-->
+<!--        <br>-->
+<!--        <div class="box-title">20 Chicken McNuggets</div>-->
+<!--        <br>-->
+<!--        <div class="box-description">Breaded chicken breast bites served with sauce</div>-->
+<!--        <hr class="separate-line1">-->
+<!--        <div class="box-price">5.49lv</div>-->
+<!--        <img class="box-image" src="./img/6dbe85fa-7e03-11ee-ac8b-f2d3c2fe88d0_dh_5220.jpg">-->
+<!--        <img class="add-to-cart" src="./img/plus%20(1).png">-->
+<!--    </div>-->
+
+<!--    <div class="box3">-->
+<!--        <br>-->
+<!--        <div class="box-title">Chicken McBites™</div>-->
+<!--        <br>-->
+<!--        <div class="box-description">9 Pieces. Marinated round pieces of chicken breast</div>-->
+<!--        <hr class="separate-line1">-->
+<!--        <div class="box-price">5.49lv</div>-->
+<!--        <img class="box-image" src="./img/6dbe85fa-7e03-11ee-ac8b-f2d3c2fe88d0_dh_5220.jpg">-->
+<!--        <img class="add-to-cart" src="./img/plus%20(1).png">-->
+<!--    </div>-->
+<!--</div>-->
+
+<!--<hr class="line2">-->
+
+<!--<h1 class="title3">Potatoes</h1>-->
+
+<!--<div class="row7">-->
+<!--    <div class="box1">-->
+<!--        <br>-->
+<!--        <div class="box-title">Medium french fries</div>-->
+<!--        <br>-->
+<!--        <div class="box-description">Crispy potatoes</div>-->
+<!--        <hr class="separate-line1">-->
+<!--        <div class="box-price">5.49lv</div>-->
+<!--        <img class="box-image" src="./img/6dbe85fa-7e03-11ee-ac8b-f2d3c2fe88d0_dh_5220.jpg">-->
+<!--        <img class="add-to-cart" src="./img/plus%20(1).png">-->
+<!--    </div>-->
+
+<!--    <div class="box2">-->
+<!--        <br>-->
+<!--        <div class="box-title">Large french fries</div>-->
+<!--        <br>-->
+<!--        <div class="box-description">Crispy potatoes</div>-->
+<!--        <hr class="separate-line1">-->
+<!--        <div class="box-price">5.49lv</div>-->
+<!--        <img class="box-image" src="./img/6dbe85fa-7e03-11ee-ac8b-f2d3c2fe88d0_dh_5220.jpg">-->
+<!--        <img class="add-to-cart" src="./img/plus%20(1).png">-->
+<!--    </div>-->
+
+<!--    <div class="box3">-->
+<!--        <br>-->
+<!--        <div class="box-title">Deluxe potatoes</div>-->
+<!--        <br>-->
+<!--        <div class="box-description">Crispy, slightly spicy potatoes</div>-->
+<!--        <hr class="separate-line1">-->
+<!--        <div class="box-price">5.49lv</div>-->
+<!--        <img class="box-image" src="./img/357ab2ba-f01c-11ed-b923-72378383b646_dh_3110.jpg">-->
+<!--        <img class="add-to-cart" src="./img/plus%20(1).png">-->
+<!--    </div>-->
+<!--</div>-->
+
+<!--<hr class="line3">-->
+
+<!--<h1 class="title4">Sauces</h1>-->
+
+<!--<div class="row8">-->
+<!--    <div class="box1">-->
+<!--        <br>-->
+<!--        <div class="box-title">BBQ sauce</div>-->
+<!--        <br>-->
+<!--        <div class="box-description">25ml</div>-->
+<!--        <hr class="separate-line1">-->
+<!--        <div class="box-price">5.49lv</div>-->
+<!--        <img class="box-image" src="./img/6dbe85fa-7e03-11ee-ac8b-f2d3c2fe88d0_dh_5220.jpg">-->
+<!--        <img class="add-to-cart" src="./img/plus%20(1).png">-->
+<!--    </div>-->
+
+<!--    <div class="box2">-->
+<!--        <br>-->
+<!--        <div class="box-title">Sour cream</div>-->
+<!--        <br>-->
+<!--        <div class="box-description">25ml</div>-->
+<!--        <hr class="separate-line1">-->
+<!--        <div class="box-price">5.49lv</div>-->
+<!--        <img class="box-image" src="./img/6dbe85fa-7e03-11ee-ac8b-f2d3c2fe88d0_dh_5220.jpg">-->
+<!--        <img class="add-to-cart" src="./img/plus%20(1).png">-->
+<!--    </div>-->
+
+<!--    <div class="box3">-->
+<!--        <br>-->
+<!--        <div class="box-title">Sweet and sour sauce</div>-->
+<!--        <br>-->
+<!--        <div class="box-description">25ml</div>-->
+<!--        <hr class="separate-line1">-->
+<!--        <div class="box-price">5.49lv</div>-->
+<!--        <img class="box-image" src="./img/6dbe85fa-7e03-11ee-ac8b-f2d3c2fe88d0_dh_5220.jpg">-->
+<!--        <img class="add-to-cart" src="./img/plus%20(1).png">-->
+<!--    </div>-->
+<!--</div>-->
+
+<!--<div class="row9">-->
+<!--    <div class="box1">-->
+<!--        <br>-->
+<!--        <div class="box-title">Mustard sauce</div>-->
+<!--        <br>-->
+<!--        <div class="box-description">25ml</div>-->
+<!--        <hr class="separate-line1">-->
+<!--        <div class="box-price">5.49lv</div>-->
+<!--        <img class="box-image" src="./img/6dbe85fa-7e03-11ee-ac8b-f2d3c2fe88d0_dh_5220.jpg">-->
+<!--        <img class="add-to-cart" src="./img/plus%20(1).png">-->
+<!--    </div>-->
+
+<!--    <div class="box2">-->
+<!--        <br>-->
+<!--        <div class="box-title">Mayonnaise</div>-->
+<!--        <br>-->
+<!--        <div class="box-description">25ml</div>-->
+<!--        <hr class="separate-line1">-->
+<!--        <div class="box-price">5.49lv</div>-->
+<!--        <img class="box-image" src="./img/6dbe85fa-7e03-11ee-ac8b-f2d3c2fe88d0_dh_5220.jpg">-->
+<!--        <img class="add-to-cart" src="./img/plus%20(1).png">-->
+<!--    </div>-->
+
+<!--    <div class="box3">-->
+<!--        <br>-->
+<!--        <div class="box-title">Ketchup</div>-->
+<!--        <br>-->
+<!--        <div class="box-description">25ml</div>-->
+<!--        <hr class="separate-line1">-->
+<!--        <div class="box-price">5.49lv</div>-->
+<!--        <img class="box-image" src="./img/6dbe85fa-7e03-11ee-ac8b-f2d3c2fe88d0_dh_5220.jpg">-->
+<!--        <img class="add-to-cart" src="./img/plus%20(1).png">-->
+<!--    </div>-->
+<!--</div>-->
+
+<!--<hr class="line4">-->
+
+<!--<h1 class="title5">Cold Drinks</h1>-->
+
+<!--<div class="row10">-->
+<!--    <div class="box1">-->
+<!--        <br>-->
+<!--        <div class="box-title">Large Coca - Cola</div>-->
+<!--        <br>-->
+<!--        <div class="box-description">500ml</div>-->
+<!--        <hr class="separate-line1">-->
+<!--        <div class="box-price">49lv</div>-->
+<!--        <img class="box-image" src="./img/6dba25aa-7e03-11ee-ac8b-f2d3c2fe88d0_dh_5200.jpg">-->
+<!--        <img class="add-to-cart" src="./img/plus%20(1).png">-->
+<!--    </div>-->
+
+
+<!--    <div class="box2">-->
+<!--        <br>-->
+<!--        <div class="box-title">Medium Coca - Cola</div>-->
+<!--        <br>-->
+<!--        <div class="box-description">400ml</div>-->
+<!--        <hr class="separate-line1">-->
+<!--        <div class="box-price">5.49lv</div>-->
+<!--        <img class="box-image" src="./img/6dbb5d94-7e03-11ee-ac8b-f2d3c2fe88d0_dh_5100.jpg">-->
+<!--        <img class="add-to-cart" src="./img/plus%20(1).png">-->
+<!--    </div>-->
+
+<!--    <div class="box3">-->
+<!--        <br>-->
+<!--        <div class="box-title">Large Fanta</div>-->
+<!--        <br>-->
+<!--        <div class="box-description">500ml</div>-->
+<!--        <hr class="separate-line1">-->
+<!--        <div class="box-price">5.49lv</div>-->
+<!--        <img class="box-image" src="./img/6dbe85fa-7e03-11ee-ac8b-f2d3c2fe88d0_dh_5220.jpg">-->
+<!--        <img class="add-to-cart" src="./img/plus%20(1).png">-->
+<!--    </div>-->
+<!--</div>-->
+
+<!--<div class="row11">-->
+<!--    <div class="box1">-->
+<!--        <br>-->
+<!--        <div class="box-title">Large Coca - Cola Zero</div>-->
+<!--        <br>-->
+<!--        <div class="box-description">500ml</div>-->
+<!--        <hr class="separate-line1">-->
+<!--        <div class="box-price">5.49lv</div>-->
+<!--        <img class="box-image" src="./img/6dbc6fe0-7e03-11ee-ac8b-f2d3c2fe88d0_dh_5260.jpg">-->
+<!--        <img class="add-to-cart" src="./img/plus%20(1).png">-->
+<!--    </div>-->
+
+<!--    <div class="box2">-->
+<!--        <br>-->
+<!--        <div class="box-title">Medium Coca - Cola Zero</div>-->
+<!--        <br>-->
+<!--        <div class="box-description">400ml</div>-->
+<!--        <hr class="separate-line1">-->
+<!--        <div class="box-price">5.49lv</div>-->
+<!--        <img class="box-image" src="./img/6dbd789a-7e03-11ee-ac8b-f2d3c2fe88d0_dh_5160.jpg">-->
+<!--        <img class="add-to-cart" src="./img/plus%20(1).png">-->
+<!--    </div>-->
+
+<!--    <div class="box3">-->
+<!--        <br>-->
+<!--        <div class="box-title">Medium Fanta</div>-->
+<!--        <br>-->
+<!--        <div class="box-description">400ml</div>-->
+<!--        <hr class="separate-line1">-->
+<!--        <div class="box-price">5.49lv</div>-->
+<!--        <img class="box-image" src="./img/6dbfad40-7e03-11ee-ac8b-f2d3c2fe88d0_dh_5120.jpg">-->
+<!--        <img class="add-to-cart" src="./img/plus%20(1).png">-->
+<!--    </div>-->
+<!--</div>-->
+
+<!--<div class="row12">-->
+<!--    <div class="box1">-->
+<!--        <br>-->
+<!--        <div class="box-title">Large Sprite</div>-->
+<!--        <br>-->
+<!--        <div class="box-description">500ml</div>-->
+<!--        <hr class="separate-line1">-->
+<!--        <div class="box-price">5.49lv</div>-->
+<!--        <img class="box-image" src="./img/6dc0ba5a-7e03-11ee-ac8b-f2d3c2fe88d0_dh_5230.jpg">-->
+<!--        <img class="add-to-cart" src="./img/plus%20(1).png">-->
+<!--    </div>-->
+
+<!--    <div class="box2">-->
+<!--        <br>-->
+<!--        <div class="box-title">Large Lipton Lemon</div>-->
+<!--        <br>-->
+<!--        <div class="box-description">500ml</div>-->
+<!--        <hr class="separate-line1">-->
+<!--        <div class="box-price">5.49lv</div>-->
+<!--        <img class="box-image" src="./img/6dbe85fa-7e03-11ee-ac8b-f2d3c2fe88d0_dh_5220.jpg">-->
+<!--        <img class="add-to-cart" src="./img/plus%20(1).png">-->
+<!--    </div>-->
+
+<!--    <div class="box3">-->
+<!--        <br>-->
+<!--        <div class="box-title">Big watter</div>-->
+<!--        <br>-->
+<!--        <div class="box-description">500ml</div>-->
+<!--        <hr class="separate-line1">-->
+<!--        <div class="box-price">5.49lv</div>-->
+<!--        <img class="box-image" src="./img/6dbe85fa-7e03-11ee-ac8b-f2d3c2fe88d0_dh_5220.jpg">-->
+<!--        <img class="add-to-cart" src="./img/plus%20(1).png">-->
+<!--    </div>-->
+<!--</div>-->
+
+<!--<div class="row13">-->
+<!--    <div class="box1">-->
+<!--        <br>-->
+<!--        <div class="box-title">Medium Sprite</div>-->
+<!--        <br>-->
+<!--        <div class="box-description">400ml</div>-->
+<!--        <hr class="separate-line1">-->
+<!--        <div class="box-price">5.49lv</div>-->
+<!--        <img class="box-image" src="./img/6dc1c094-7e03-11ee-ac8b-f2d3c2fe88d0_dh_5130.jpg">-->
+<!--        <img class="add-to-cart" src="./img/plus%20(1).png">-->
+<!--    </div>-->
+
+<!--    <div class="box2">-->
+<!--        <br>-->
+<!--        <div class="box-title">Medium Lipton Lemon</div>-->
+<!--        <br>-->
+<!--        <div class="box-description">400ml</div>-->
+<!--        <hr class="separate-line1">-->
+<!--        <div class="box-price">5.49lv</div>-->
+<!--        <img class="box-image" src="./img/6dbe85fa-7e03-11ee-ac8b-f2d3c2fe88d0_dh_5220.jpg">-->
+<!--        <img class="add-to-cart" src="./img/plus%20(1).png">-->
+<!--    </div>-->
+
+<!--    <div class="box3">-->
+<!--        <br>-->
+<!--        <div class="box-title">Small Watter</div>-->
+<!--        <br>-->
+<!--        <div class="box-description">400ml</div>-->
+<!--        <hr class="separate-line1">-->
+<!--        <div class="box-price">5.49lv</div>-->
+<!--        <img class="box-image" src="./img/6dbe85fa-7e03-11ee-ac8b-f2d3c2fe88d0_dh_5220.jpg">-->
+<!--        <img class="add-to-cart" src="./img/plus%20(1).png">-->
+<!--    </div>-->
+<!--</div>-->
+
+<!--<hr class="line5">-->
+
+<!--<h1 class="title6">Hot Drinks</h1>-->
+
+<!--<div class="row14">-->
+<!--    <div class="box1">-->
+<!--        <br>-->
+<!--        <div class="box-title">Espresso</div>-->
+<!--        <br>-->
+<!--        <div class="box-description">45ml</div>-->
+<!--        <hr class="separate-line1">-->
+<!--        <div class="box-price">5.49lv</div>-->
+<!--        <img class="box-image" src="./img/6dbe85fa-7e03-11ee-ac8b-f2d3c2fe88d0_dh_5220.jpg">-->
+<!--        <img class="add-to-cart" src="./img/plus%20(1).png">-->
+<!--    </div>-->
+
+<!--    <div class="box2">-->
+<!--        <br>-->
+<!--        <div class="box-title">Cappuccino</div>-->
+<!--        <br>-->
+<!--        <div class="box-description">200ml</div>-->
+<!--        <hr class="separate-line1">-->
+<!--        <div class="box-price">5.49lv</div>-->
+<!--        <img class="box-image" src="./img/6dbe85fa-7e03-11ee-ac8b-f2d3c2fe88d0_dh_5220.jpg">-->
+<!--        <img class="add-to-cart" src="./img/plus%20(1).png">-->
+<!--    </div>-->
+
+<!--    <div class="box3">-->
+<!--        <br>-->
+<!--        <div class="box-title">Tea</div>-->
+<!--        <br>-->
+<!--        <div class="box-description">200ml</div>-->
+<!--        <hr class="separate-line1">-->
+<!--        <div class="box-price">5.49lv</div>-->
+<!--        <img class="box-image" src="./img/6dbe85fa-7e03-11ee-ac8b-f2d3c2fe88d0_dh_5220.jpg">-->
+<!--        <img class="add-to-cart" src="./img/plus%20(1).png">-->
+<!--    </div>-->
+<!--</div>-->
+
+<!--<hr class="line6">-->
+
+<!--<h1 class="title7">Deserts</h1>-->
+
+<!--<div class="row15">-->
+<!--    <div class="box1">-->
+<!--        <br>-->
+<!--        <div class="box-title">Milkshake Vanilla</div>-->
+<!--        <br>-->
+<!--        <div class="box-description">400ml</div>-->
+<!--        <hr class="separate-line1">-->
+<!--        <div class="box-price">5.49lv</div>-->
+<!--        <img class="box-image" src="./img/6dbe85fa-7e03-11ee-ac8b-f2d3c2fe88d0_dh_5220.jpg">-->
+<!--        <img class="add-to-cart" src="./img/plus%20(1).png">-->
+<!--    </div>-->
+
+<!--    <div class="box2">-->
+<!--        <br>-->
+<!--        <div class="box-title">Milkshake Chocolate</div>-->
+<!--        <br>-->
+<!--        <div class="box-description">400ml</div>-->
+<!--        <hr class="separate-line1">-->
+<!--        <div class="box-price">5.49lv</div>-->
+<!--        <img class="box-image" src="./img/6dbe85fa-7e03-11ee-ac8b-f2d3c2fe88d0_dh_5220.jpg">-->
+<!--        <img class="add-to-cart" src="./img/plus%20(1).png">-->
+<!--    </div>-->
+
+<!--    <div class="box3">-->
+<!--        <br>-->
+<!--        <div class="box-title">Milkshake Strawberry</div>-->
+<!--        <br>-->
+<!--        <div class="box-description">400ml</div>-->
+<!--        <hr class="separate-line1">-->
+<!--        <div class="box-price">5.49lv</div>-->
+<!--        <img class="box-image" src="./img/6dbe85fa-7e03-11ee-ac8b-f2d3c2fe88d0_dh_5220.jpg">-->
+<!--        <img class="add-to-cart" src="./img/plus%20(1).png">-->
+<!--    </div>-->
+<!--</div>-->
+
+<!--<div class="row16">-->
+<!--    <div class="box1">-->
+<!--        <br>-->
+<!--        <div class="box-title">McFlurry Snickers®</div>-->
+<!--        <br>-->
+<!--        <div class="box-description">Vanilla ice cream, with Snickers chocolate, caramel syrup & Mars chocolate</div>-->
+<!--        <hr class="separate-line1">-->
+<!--        <div class="box-price">5.49lv</div>-->
+<!--        <img class="box-image" src="./img/6dbe85fa-7e03-11ee-ac8b-f2d3c2fe88d0_dh_5220.jpg">-->
+<!--        <img class="add-to-cart" src="./img/plus%20(1).png">-->
+<!--    </div>-->
+
+<!--    <div class="box2">-->
+<!--        <br>-->
+<!--        <div class="box-title">McFlurry Oreo®</div>-->
+<!--        <br>-->
+<!--        <div class="box-description">Vanilla ice cream, with pieces of Oreo cookie</div>-->
+<!--        <hr class="separate-line1">-->
+<!--        <div class="box-price">49lv</div>-->
+<!--        <img class="box-image" src="./img/35b42950-f01c-11ed-bf91-82fa4ae14132_dh_6140.jpg">-->
+<!--        <img class="add-to-cart" src="./img/plus%20(1).png">-->
+<!--    </div>-->
+
+<!--    <div class="box3">-->
+<!--        <br>-->
+<!--        <div class="box-title">McFlurry Twix®</div>-->
+<!--        <br>-->
+<!--        <div class="box-description">Vanilla ice cream, with pieces of chocolate, Twix cookie & caramel syrup & Mars chocolate</div>-->
+<!--        <hr class="separate-line1">-->
+<!--        <div class="box-price">5.49lv</div>-->
+<!--        <img class="box-image" src="./img/6dbe85fa-7e03-11ee-ac8b-f2d3c2fe88d0_dh_5220.jpg">-->
+<!--        <img class="add-to-cart" src="./img/plus%20(1).png">-->
+<!--    </div>-->
+<!--</div>-->
+
+<!--<hr class="line7">-->
+
+<!--<div class="bottom-one">-->
+<!--    <h1 class="bottom-title1">Address</h1>-->
+<!--    <h3 class="bottom-description1">g.k. Zornitsa, бул. „Стефан Стамболов“, 8018 Burgas</h3>-->
+<!--    <button class="bottom-button1"><a href="https://maps.google.com/maps?hl=en&gl=bg&um=1&ie=UTF-8&fb=1&sa=X&ftid=0x40a694bfe9691687:0x7beb53440a2db775">See Map</a></button>-->
+<!--</div>-->
+
+<!--<div class="bottom-two">-->
+<!--    <h1 class="bottom-title2">More Information</h1>-->
+<!--    <h3 class="bottom-description2">+359884000308</h3>-->
+<!--    <button class="bottom-button2"><a href="https://mcdonalds.bg/">Visit Website</a></button>-->
+<!--</div>-->
+
+<!--<hr class="line8">-->
+
+<!--<hr class="line9">-->
+
+<div class="sidebar" id="sidebar">
+    <div class="sidebar-close">
+        <img class="close-img" src="./img/close.png">
+    </div>
+        <div class="cart-menu">
+            <h3 class="cart-title">My Cart</h3>
+            <div class="cart-tems"></div>
+            <div class="cart-items"></div>
+        </div>
+
+        <div class="sidebar--footer">
+            <div class="total--amount">
+                <h3>Total</h3> <h5>(delivery included)</h5>
+                <div class="cart-total">0.00lv</div>
+            </div>
+            <button class="checkout-btn">Checkout</button>
+        </div>
+</div>
+
+</body>
+</html>

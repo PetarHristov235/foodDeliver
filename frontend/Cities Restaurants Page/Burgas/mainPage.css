@@ -1,0 +1,894 @@
+@import url('https://fonts.googleapis.com/css2?family=Madimi+One&family=Oswald:wght@700&display=swap');
+body {
+    background-color: #0c0032;
+    font-family: "Madimi One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    margin: 0px;
+    padding: 0px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.bg {
+    background-color: #190061;
+    position: relative;
+    right: 10px;
+    width: 1600px;
+    height: 190px;
+    bottom: 100px;
+}
+
+.content h1 {
+    position: absolute;
+    color: #fff;
+    transform: translate(-55%, -50%);
+    font-size: 40px;
+}
+
+.content h1:nth-child(1) {
+    color: transparent;
+    -webkit-text-stroke: 2px whitesmoke;
+}
+
+.content h1:nth-child(2) {
+    color: #3500d3;
+    animation: animate 4s ease-in-out infinite;
+}
+
+@keyframes animate {
+    0%, 100% {
+        clip-path: polygon(0% 45%, 15% 44%, 32% 50%, 54% 60%, 70% 61%, 84% 59%, 100% 52%, 100% 100%, 0% 100%);
+    }
+    50% {
+        clip-path: polygon(0 60%, 16% 65%, 34% 66%, 51% 62%, 67% 50%, 84% 45%, 100% 46%, 100% 100%, 0% 100%);
+    }
+}
+
+.header-title {
+    position: relative;
+    left: 48.8%;
+    top: 110px;
+}
+
+.search-img {
+    position: relative;
+    top: 120px;
+    left: 1300px;
+    width: 45px;
+    height: 45px;
+    cursor: pointer;
+}
+
+.basket-img {
+    position: relative;
+    top: 120px;
+    left: 1350px;
+    width: 45px;
+    height: 45px;
+    cursor: pointer;
+}
+
+.discovery {
+    text-align: center;
+    position: relative;
+    bottom: 90px;
+}
+
+.banner-bg {
+    background-color: #190061;
+    position: relative;
+    right: 120px;
+    width: 1700px;
+    height: 240px;
+    bottom: 80px;
+}
+
+.section1 {
+    position: relative;
+    right: 20px;
+    bottom: 85px;
+}
+
+.coupon-img {
+    position: relative;
+    width: 60px;
+    height: 60px;
+    left: 52px;
+    top: 10px;
+}
+
+.promo {
+    position: relative;
+    left: 22px;
+}
+
+.banner-text1 {
+     position: relative;
+     left: 270px;
+     top: 87px;
+}
+
+.btn-get-it {
+    position: relative;
+    left: 45px;
+    top: 10px;
+    border-radius: 5px 10px;
+    background: #0c0032;
+    width: 70px;
+    height: 35px;
+    border-color: #06a8ff;
+    box-shadow: 0 0 5px #3500d3, 0 0 25px #3500d3;
+    color: white;
+    cursor: pointer;
+}
+
+.banner-text2{
+    position: relative;
+    left: 800px;
+    bottom: 160px;
+}
+
+.description1 {
+    position: relative;
+    right: 3px;
+}
+
+.order {
+    position: relative;
+    left: 41px;
+}
+
+.menu-img {
+    position: relative;
+    width: 60px;
+    height: 60px;
+    left: 40px;
+    top: 10px;
+}
+
+.description2 {
+    position: relative;
+    right: 10px;
+}
+
+#arrow1 {
+    position: absolute;
+    top: 195px;;
+    left: 4.2%;
+    transform: translate(-50%, -50%);
+}
+
+#arrow1 span {
+    display: block;
+    width: 15px;
+    height: 15px;
+    border-bottom: 5px solid #06a8ff;
+    border-right: 5px solid #06a8ff;
+    transform: rotate(45deg);
+    margin: -10px;
+    animation: scroll 2s infinite;
+}
+
+#arrow1 span:nth-child(2) {
+    animation-delay: -.2s;
+}
+
+#arrow1 span:nth-child(3) {
+    animation-delay: -.4s;
+}
+
+@keyframes scroll {
+    0% {
+        opacity: 0;
+        transform: rotate(45deg) translate(-20px -20px);
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        transform: rotate(45deg) translate(20px 20px);
+    }
+}
+
+.banner-text3{
+    position: relative;
+    right: 185px;
+    bottom: 50px;
+}
+
+.gps-img {
+    position: relative;
+    width: 60px;
+    height: 60px;
+    left: 1600px;
+    bottom: 287px;
+}
+
+.location {
+    position: relative;
+    left: 1589px;
+    bottom: 297px;
+}
+
+.description3 {
+    position: relative;
+    left: 1605px;
+    bottom: 297px;
+}
+
+.section3 {
+    position: relative;
+    left: 10px;
+    bottom: 50px;
+}
+
+.section2 {
+    position: relative;
+    bottom: 50px;
+    left: 20px;
+}
+
+#section-2 {
+    position: relative;
+    top: 500px;
+}
+
+.btn-change-it {
+    position: relative;
+        left: 1560px;
+        bottom: 280px;
+        border-radius: 5px 10px;
+        background: #0c0032;
+        width: 150px;
+        height: 35px;
+        border-color: #06a8ff;
+        box-shadow: 0 0 5px #3500d3, 0 0 25px #3500d3;
+        color: white;
+        cursor: pointer;
+}
+
+#vertical-line1 {
+    width: 5px;
+    height: 240px;
+    background-color: white;
+    position: relative;
+    left: 600px;
+    bottom: 608px;
+}
+
+#vertical-line2 {
+    width: 5px;
+    height: 240px;
+    background-color: white;
+    position: relative;
+    left: 1194px;
+    bottom: 848px;
+}
+
+.categories {
+    text-align: center;
+    position: relative;
+    bottom: 65px;
+}
+
+.categories-squares {
+    text-align: center;
+}
+
+.square:hover {
+    transform: scale(1.2);
+    background: #06a8ff;
+    box-shadow: 2px 2px 2px #000;
+}
+
+.square {
+    background-color: #190061;
+    display: inline-block;
+    padding: 10px;
+    height: 150px;
+    margin: 20px;
+    position: relative;
+    width: 230px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 1s;
+    bottom: 70px;
+}
+
+.square-text {
+    position: relative;
+    top: 35px;
+    color: white;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.title-restaurants {
+    position: relative;
+    top: 25px;
+    left: 150px;
+    font-size: 2.5rem;
+}
+.box-section1{
+    position: relative;
+    bottom: 120px;
+    color: black;
+    right: 220px;
+}
+
+.box-section2{
+    position: relative;
+    bottom: 70px;
+    color: black;
+}
+
+.box1 {
+    background-color: #190061;
+    position: relative;
+    top: 140px;
+    left: 290px;
+    width: 430px;
+    height: 280px;
+    box-shadow: 0 0 5px #3500d3,
+    0 0 25px #3500d3;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.McDonalds-img {
+    width: 430px;
+    height: 170px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    position: absolute;
+    bottom: 110px;
+}
+
+.box1-inside {
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: white;
+    position: relative;
+    top:170px;
+    height: 110px;
+}
+
+.box1-text1 {
+    position: relative;
+    left: 22px;
+    top: 10px;
+}
+
+#horizontal-line1 {
+    background-color: #3500d3;
+    position: absolute;
+    bottom: 55px;
+    width: 430px;
+    height: 3px;
+}
+
+.box1-description1 {
+    position: relative;
+    left: 20px;
+    top: 18px;
+}
+
+.box1-description2 {
+    position: relative;
+    left: 270px;
+    bottom: 69px;
+}
+
+.box1-description3 {
+    position: relative;
+    bottom: 166px;
+    left: 380px;
+}
+
+.rating-img {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    left: 240px;
+    bottom: 25px;
+}
+
+.delivery-img {
+    position: relative;
+    width: 30px;
+    height: 30px;
+    left: 340px;
+    bottom: 115px;
+}
+
+.box2 {
+    background-color: #190061;
+    position: relative;
+    bottom: 160px;;
+    left: 770px;
+    width: 430px;
+    height: 280px;
+    box-shadow: 0 0 5px #3500d3,
+    0 0 25px #3500d3;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.Starbucks-img {
+    width: 430px;
+    height: 170px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    position: absolute;
+}
+
+.box2-inside {
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: white;
+    position: relative;
+    top:170px;
+    height: 110px;
+}
+
+.box2-text1 {
+    position: relative;
+    left: 22px;
+    top: 10px;
+}
+
+.box2-description1 {
+    position: relative;
+    left: 20px;
+    top: 18px;
+}
+
+.box2-description2 {
+    position: relative;
+    left: 260px;
+    bottom: 69px;
+}
+
+.box2-description3 {
+    position: relative;
+    bottom: 166px;
+    left: 380px;
+}
+
+.rating-img2 {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    left: 230px;
+    bottom: 25px;
+}
+
+.delivery-img2 {
+    position: relative;
+    width: 30px;
+    height: 30px;
+    left: 340px;
+    bottom: 115px;
+}
+
+.box3 {
+    background-color: #190061;
+    position: relative;
+    bottom: 460px;;
+    left: 1250px;
+    width: 430px;
+    height: 280px;
+    box-shadow: 0 0 5px #3500d3,
+        0 0 25px #3500d3;
+        cursor: pointer;
+        border-radius: 10px;
+}
+
+.Speedy-img {
+    width: 430px;
+    height: 170px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    position: absolute;
+}
+
+.box3-inside {
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: white;
+    position: relative;
+    top:170px;
+    height: 110px;
+}
+
+.box3-text1 {
+    position: relative;
+    left: 22px;
+    top: 10px;
+}
+
+.box3-description1 {
+    position: relative;
+    left: 20px;
+    top: 18px;
+}
+
+.box3-description2 {
+    position: relative;
+    left: 270px;
+    bottom: 69px;
+}
+
+.box3-description3 {
+    position: relative;
+    bottom: 167px;
+    left: 380px;
+}
+
+.rating-img3 {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    left: 240px;
+    bottom: 25px;
+}
+
+.delivery-img3 {
+    position: relative;
+    width: 30px;
+    height: 30px;
+    left: 340px;
+    bottom: 115px;
+}
+
+.box4 {
+    background-color: #190061;
+    position: relative;
+    bottom: 495px;
+    left: 70px;
+    width: 430px;
+    height: 280px;
+    box-shadow: 0 0 5px #3500d3,
+        0 0 25px #3500d3;
+        cursor: pointer;
+        border-radius: 10px;
+}
+
+.Subway-img {
+        width: 430px;
+        height: 170px;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        position: absolute;
+        bottom: 110px;
+}
+
+.Nori-img {
+    width: 430px;
+            height: 170px;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            position: absolute;
+            bottom: 110px;
+}
+
+.Hua-img {
+    width: 430px;
+                height: 170px;
+                border-top-left-radius: 10px;
+                border-top-right-radius: 10px;
+                position: absolute;
+                bottom: 110px;
+}
+
+.Troikata-img {
+    width: 430px;
+                    height: 170px;
+                    border-top-left-radius: 10px;
+                    border-top-right-radius: 10px;
+                    position: absolute;
+                    bottom: 110px;
+}
+
+.Fu-img {
+    width: 430px;
+            height: 170px;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            position: absolute;
+            bottom: 110px;
+}
+
+.Happy-img {
+        width: 430px;
+        height: 170px;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        position: absolute;
+        bottom: 110px;
+}
+
+.Master-img {
+    width: 430px;
+            height: 170px;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            position: absolute;
+            bottom: 110px;
+}
+
+.Aladin-img {
+    width: 430px;
+            height: 170px;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            position: absolute;
+            bottom: 110px;
+}
+
+.King-img {
+    width: 430px;
+            height: 170px;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            position: absolute;
+            bottom: 110px;
+}
+
+.Costa-img {
+        width: 430px;
+        height: 170px;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        position: absolute;
+        bottom: 110px;
+}
+
+.Pantastic-img {
+    width: 430px;
+            height: 170px;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            position: absolute;
+            bottom: 110px;
+}
+
+.Bubble-img {
+    width: 430px;
+            height: 170px;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            position: absolute;
+            bottom: 110px
+}
+
+.Gladstone-img {
+        width: 430px;
+        height: 170px;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        position: absolute;
+        bottom: 110px;
+}
+
+.Kfc-img {
+    width: 430px;
+    height: 170px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    position: absolute;
+    bottom: 110px;
+}
+
+.Hesburger-img {
+    width: 430px;
+        height: 170px;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        position: absolute;
+        bottom: 110px;
+}
+
+.Flora-img {
+    width: 430px;
+    height: 170px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    position: absolute;
+}
+
+.box4-inside {
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: white;
+    position: relative;
+    top:170px;
+    height: 110px;
+}
+
+.box4-text1 {
+    position: relative;
+    left: 22px;
+    top: 10px;
+}
+
+.box4-description1 {
+    position: relative;
+    left: 20px;
+    top: 18px;
+}
+
+.box4-description2 {
+    position: relative;
+    left: 260px;
+    bottom: 69px;
+}
+
+.box4-description3 {
+    position: relative;
+    bottom: 167px;
+    left: 380px;
+}
+
+.rating-img4 {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    left: 230px;
+    bottom: 25px;
+}
+
+.delivery-img4 {
+    position: relative;
+    width: 30px;
+    height: 30px;
+    left: 340px;
+    bottom: 115px;
+}
+
+.box5 {
+    background-color: #190061;
+    position: relative;
+    bottom: 795px;
+    left: 620px;
+    width: 300px;
+    height: 280px;
+    box-shadow: 0 0 5px #3500d3,
+    0 0 25px #3500d3;
+    cursor: pointer;
+    border-radius: 70px;
+}
+
+.box5-text {
+    text-align: center;
+    position: relative;
+    top: 90px;
+    left: 97px;
+    width: 100px;
+    size: 100px;
+    color: white;
+}
+
+.box6 {
+    background-color: #190061;
+    position: relative;
+    bottom: 1095px;;
+    left: 1030px;
+    width: 430px;
+    height: 280px;
+    box-shadow: 0 0 5px #3500d3,
+    0 0 25px #3500d3;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.Sushi-img {
+    width: 430px;
+    height: 170px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    position: absolute;
+}
+
+.box6-inside {
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: white;
+    position: relative;
+    top:170px;
+    height: 110px;
+}
+
+.box6-text1 {
+    position: relative;
+    left: 22px;
+    top: 10px;
+}
+
+.box6-description1 {
+    position: relative;
+    left: 20px;
+    top: 18px;
+}
+
+.box6-description2 {
+    position: relative;
+    left: 270px;
+    bottom: 69px;
+}
+
+.box6-description3 {
+    position: relative;
+    bottom: 167px;
+    left: 380px;
+}
+
+.rating-img6 {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    left: 240px;
+    bottom: 25px;
+}
+
+.delivery-img6 {
+    position: relative;
+    width: 30px;
+    height: 30px;
+    left: 340px;
+    bottom: 115px;
+}
+
+#vertical-line3 {
+    width: 3px;
+    height: 50px;
+    background-color: white;
+    position: absolute;
+    transform: rotate(45deg);
+    bottom: 126.1px;
+    left: 17px;
+    background-color: #3500d3;
+}
+
+#vertical-line4 {
+    width: 3px;
+    height: 50px;
+    background-color: white;
+    position: absolute;
+    transform: rotate(45deg);
+    top: 126.9px;
+    left: 230px;
+    background-color: #3500d3;
+}
+
+#vertical-line7 {
+    width: 3px;
+        height: 50px;
+        background-color: white;
+        position: absolute;
+        transform: rotate(135deg);
+        top: 127.5px;
+        right: 229.9px;
+        background-color: #3500d3;
+}
+
+#vertical-line8 {
+    width: 3px;
+    height: 50px;
+    background-color: white;
+    position: absolute;
+    transform: rotate(135deg);
+    bottom: 126.2px;
+    left: 231px;
+    background-color: #3500d3;
+}
